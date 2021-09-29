@@ -1,0 +1,95 @@
+main {
+    background-color: #ffffff;
+    width: 19.375rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    margin-top: 4.375rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: grid;
+    
+    .hero {
+        padding: 1.4375rem;
+        font-weight: 700;
+
+        h1 {
+            color: $cyan;
+           
+        }
+
+        span {
+            color: $brightYellow;
+        }
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    .subscription {
+        background-color: hsl(179, 62%, 38%);
+        color: #ffffff;
+        font-weight: 700;
+
+        &__content {
+           padding: 1.4375rem;
+
+           h2 {
+               margin-bottom: 1rem;
+           }
+           h3 {
+               font-size: 2.625rem;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                margin-bottom: 1rem;
+               span {
+                   font-size: 1rem;
+                   font-weight: 400;
+                   margin-left: 1rem;
+               }
+           }
+
+           p {
+               font-weight: 400;
+               margin: 0;
+               margin-bottom: 1.875rem;
+           }
+
+           button {
+               width: 100%;
+               height: 3.125rem;
+               border: 0;
+               border-radius: 0.3125rem;
+               background-color: $brightYellow;
+               color: #ffffff;
+               box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+               font-weight: 700;
+           }
+        }
+    }
+
+    .whyUs {
+        background-color: hsl(179, 62%, 43%);
+        color: #ffffff;
+        font-weight: 700;
+
+        &__content {
+           padding: 1.4375rem;
+
+           p {
+               font-weight: 400;
+           }
+        }
+    }
+
+}
+
+@media screen and (min-width: 69.375em) {
+    main {
+        width: 39.75rem;
+        .aboutPlan {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
